@@ -1,7 +1,6 @@
 # Spotify
-# 2025.9.18
+# 2025.10.1
 
-^https:\/\/spclient\.wg\.spotify\.com\/artistview\/v1\/artist\/(.*)&platform=iphone url 307 https://spclient.wg.spotify.com/artistview/v1/artist/$1&platform=ipad
 ^https:\/\/spclient\.wg\.spotify\.com\/(watch-feed-entrypoints|ads\/v3\/ads|pendragon|merch-npv-service) url reject-dict
 ^https:\/\/spclient\.wg\.spotify\.com\/user-customization-service url script-response-body https://github.com/w-jinke/quanx/raw/refs/heads/main/js/spotify-response.js
 
