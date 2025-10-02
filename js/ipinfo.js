@@ -62,6 +62,6 @@ let ip = obj["ip"];
 let country = countryMap[obj["country"]] || obj["country"];
 
 let title = " ";
-let subtitle = country + "-IP" + ip;
+let subtitle = country + "IP：" + ip;
 
 $done({ ip, title, subtitle });
